@@ -1,0 +1,109 @@
+:root {
+  --bg: #f8ede3;
+  --panel: #ffffff;
+  --accent: #d0b8a8;
+  --accent-hover: #bda290;
+  --text: #3c2a21;
+  --text-dim: #7f685c;
+}
+
+body {
+  height: 100dvh;
+  width: 100dvw;
+  margin: 0;
+  background-color: var(--bg);
+  font-family: "Segoe UI", system-ui, sans-serif;
+  color: var(--text);
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: var(--text);
+}
+button {
+  border: 1px solid transparent;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: underline transparent;
+  color: var(--text);
+  background-color: transparent;
+  cursor: pointer;
+  transition:
+    text-decoration-color 0.3s ease-in-out,
+    text-shadow 0.3s ease-in-out;
+}
+
+button:hover {
+  text-decoration-color: var(--text);
+  text-shadow: 2px 2px 4px #000000;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 20px 0 20px;
+  background-color: var(--panel);
+  text-align: center;
+  padding: 20px 1%;
+  letter-spacing: 1px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 10px 10px 0 0;
+  button {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}
+footer {
+  text-align: center;
+  margin: 0 20px 20px 20px;
+  padding: 20px 1%;
+  background-color: var(--panel);
+  border-radius: 0 0 10px 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+#content {
+  padding: 20px;
+  margin: 0 20px;
+  height: calc(100dvh - 160px);
+  background-color: var(--panel);
+  align-items: stretch;
+  gap: 0px;
+  border-radius: 0;
+}
+.input-field{
+  position: relative;
+}
+.input-field input{
+   width: 350px;
+  height: 60px;
+  border-radius: 6px;
+  font-size: 18px;
+  padding: 0 15px;
+  border: 2px solid var(--panel);
+  background: transparent;
+  color: var(--text-dim);
+  outline: none;
+}
+.input-field label{
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: var(--text-dim);
+  font-size: 19px;
+  pointer-events: none;
+  transition: 0.3s;
+}
+input:focus{
+  border: 2px solid var(--accent-hover);
+}
+input:focus ~ label,
+input:valid ~ label{
+  top: 0;
+  left: 15px;
+  font-size: 16px;
+  padding: 0 2px;
+  background: var(--panel);
+}
