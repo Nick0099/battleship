@@ -1,17 +1,18 @@
 const loadWelcome = () => {
   const header = document.getElementById("header");
   const content = document.getElementById("content");
+  
   header.innerHTML = 
   `
-   <button class="nav-logo" id="homeBtn">BattleShip</button>
+   <h1 id="welcomeHead">BattleShip</h1>
   `;
+
   content.innerHTML = `
-  <h1 id="welcomeScreen">Welcome to Battleship</h1>
   <br>
-  <form class="input-field">
+  <form class="input-field" id="nameForm">
     <input type="text" required id="inpname"> 
-    <label>Name</label>
-    <button id="goBtn">Go!</button>
+    <label>Name</label><br>
+    <button type = "button" id="goBtn">Go!</button>
   </form>
   `;
 
