@@ -1,15 +1,20 @@
 const loadWelcome = () => {
-  // const name = document.getElementById("name");
-  // content.innerHTML = `Hello ${playerName} `;
+  const header = document.getElementById("header");
   const content = document.getElementById("content");
-  content.innerHTML = `
-  <h1>Welcome to Battleship</h1>
-  <br>
-  <div class="input-field">
-    <input type="text" required spellcheck="false"> 
-    <label>Enter email</label>
-  </div>
+  header.innerHTML = 
+  `
+   <button class="nav-logo" id="homeBtn">BattleShip</button>
   `;
+  content.innerHTML = `
+  <h1 id="welcomeScreen">Welcome to Battleship</h1>
+  <br>
+  <form class="input-field">
+    <input type="text" required id="inpname"> 
+    <label>Name</label>
+    <button id="goBtn">Go!</button>
+  </form>
+  `;
+
 };
 
 export default loadWelcome;
