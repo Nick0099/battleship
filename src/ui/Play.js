@@ -10,8 +10,8 @@ const loadPlay = () => {
   content.innerHTML = `
   <p>Game View</p>
   
-  <div class="player1 grid"></div>
-  <div class="player2 grid"></div>
+  <div class="player1 grid_ii"></div>
+  <div class="player2 grid_ii"></div>
   `;
 };
 
