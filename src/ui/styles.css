@@ -120,7 +120,7 @@ input:valid ~ label {
   padding: 0 2px;
   background: var(--panel);
 }
-form #goBtn {
+#goBtn {
   color: var(--accent-hover);
   border: 1px solid var(--bg);
   height: 50px;
