@@ -27,6 +27,7 @@ const loadInitial = () => {
   const start = document.querySelector('.startBtn');
   start.addEventListener('click',() => loadPlay())
   grid("1");
+  
 };
 
 export default loadInitial;

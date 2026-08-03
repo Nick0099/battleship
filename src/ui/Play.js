@@ -1,4 +1,5 @@
 import grid from "../game_logic/grid.js";
+import result from "../game_logic/final.js"
 
 const loadPlay = () => {
   const header = document.getElementById("header");
@@ -31,8 +32,8 @@ const loadPlay = () => {
     <div class="div16">Your Side</div>
     <div class="div17">Opponent's side</div>
   `;
-
   grid("2");
+  result(true);
 };
 
 export default loadPlay;
