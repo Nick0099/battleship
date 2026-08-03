@@ -77,6 +77,10 @@ footer {
   gap: 0px;
   border-radius: 0;
   max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 8px;
 }
 .input-field {
   position: relative;
@@ -127,7 +131,7 @@ input:valid ~ label {
   margin-top: 20px;
 }
 
-.grid_i {
+.grid {
   display: grid;
   gap: 0;
   grid-template-columns: repeat(10, 1fr);
@@ -140,6 +144,12 @@ input:valid ~ label {
   background-position: center;
   background-repeat: no-repeat;
 }
+.grid_i{
+  grid-column: span 3 / span 3;
+  grid-row: span 5 / span 5;
+  grid-column-start: 3;
+}
+
 .grid-cell {
   border-radius: 0px;
   border: 1px solid black;
@@ -147,3 +157,28 @@ input:valid ~ label {
   height: 100%;
   width: 100%;
 }
+.head2 {
+    grid-column: span 2 / span 2;
+    text-align: center;
+}
+#patrolBoat {
+    grid-row-start: 2;
+}
+#Submarine {
+    grid-row-start: 2;
+}
+#Destroyer {
+    grid-row-start: 3;
+}
+#Battleship {
+    grid-row-start: 3;
+}
+#Carrier {
+    grid-column: span 2 / span 2;
+    grid-row-start: 4;
+}
+#startBtn {
+    grid-column: span 2 / span 2;
+    grid-row-start: 5;
+}
+        
