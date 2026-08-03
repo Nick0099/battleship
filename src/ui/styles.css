@@ -259,17 +259,20 @@ input:valid ~ label {
 .patrolBoat {
   grid-row-start: 2;
   background-image: url(./img/patrolbt.png);
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  background-origin: content-box;
 }
 
 .Submarine {
   grid-row-start: 2;
+  padding: 20px;
   background-image: url(./img/submarine.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-origin: content-box;
 }
 
 .Destroyer {
@@ -278,23 +281,26 @@ input:valid ~ label {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-origin: content-box;
 }
 
 .Battleship {
   grid-row-start: 3;
   background-image: url(./img/battleship.png);
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  background-origin: content-box;
 }
 
 .Carrier {
   grid-column: span 2 / span 2;
   grid-row-start: 4;
   background-image: url(./img/carrier.png);
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  background-origin: content-box;
 }
 
 .startBtn {
