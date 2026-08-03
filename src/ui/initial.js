@@ -16,11 +16,11 @@ const loadInitial = () => {
 
   content.innerHTML = `
     <h2 class="head2">Place your boats</h2>
-    <button type="button" class="patrolBoat">Patrol Boat</button>
-    <button type="button" class="Submarine">Submarine</button>
-    <button type="button" class="Destroyer">Destroyer</button>
-    <button type="button" class="Battleship">Battleship</button>
-    <button type="button" class="Carrier">Carrier</button>
+    <button type="button" class="patrolBoat"></button>
+    <button type="button" class="Submarine"></button>
+    <button type="button" class="Destroyer"></button>
+    <button type="button" class="Battleship"></button>
+    <button type="button" class="Carrier"></button>
     <div class="player1 grid grid_i"></div>
     <button type="button" class="startBtn">Start Game</button>
   `;

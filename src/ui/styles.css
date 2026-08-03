@@ -353,6 +353,7 @@ input:valid ~ label {
 .div9 {
   grid-column-start: 1;
   grid-row-start: 6;
+  grid-column-end: 1;
 }
 
 .div10 {
