@@ -1,4 +1,5 @@
 import grid from "../game_logic/grid.js";
+import loadPlay from "./Play.js";
 
 const loadInitial = () => {
   const header = document.getElementById("header");
@@ -23,7 +24,8 @@ const loadInitial = () => {
     <div class="player1 grid grid_i"></div>
     <button type="button" class="startBtn">Start Game</button>
   `;
-
+  const start = document.querySelector('.startBtn');
+  start.addEventListener('click',() => loadPlay())
   grid("1");
 };
 
