@@ -31,6 +31,7 @@ const loadPlay = () => {
     <div class="div15">Dynamic text goes here</div>
     <div class="div16">Your Side</div>
     <div class="div17">Opponent's side</div>
+    <div class = "pop" ></div>
   `;
   grid("2");
   result(true);

@@ -1,6 +1,6 @@
 const result = (input) => {
     const win = String(input).trim().toLowerCase() === "true";
-    const pop = document.createElement("div");
+    const pop = document.querySelector(".pop");
   if (win == true) {
     pop.classList.add('win','pop')
     pop.innerHTML = `

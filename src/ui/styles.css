@@ -414,3 +414,8 @@ input:valid ~ label {
   color: var(--hit);
   font-weight: 700;
 }
+.pop{
+  position: fixed;
+  z-index: 100;
+  
+}
