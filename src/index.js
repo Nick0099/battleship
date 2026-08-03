@@ -3,7 +3,7 @@ import loadWelcome from "./ui/Welcome.js";
 import loadInitial from "./ui/initial.js";
 import loadPlay from "./ui/Play.js";
 
-loadPlay();
+loadInitial();
 
 document.addEventListener("click", (e) => {
   if (e.target.matches("#homeBtn")) {
