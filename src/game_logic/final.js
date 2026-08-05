@@ -17,4 +17,3 @@ const result = (input) => {
 };
 
 export default result;
-// hello
