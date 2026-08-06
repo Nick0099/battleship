@@ -16,3 +16,4 @@ document.addEventListener("click", (e) => {
     return 'error'
   }
 });
+// couldnt do anything today too🥲
